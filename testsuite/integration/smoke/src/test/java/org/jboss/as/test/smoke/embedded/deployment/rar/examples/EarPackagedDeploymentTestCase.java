@@ -101,7 +101,7 @@ public class EarPackagedDeploymentTestCase extends AbstractMgmtTestBase {
 	    final EnterpriseArchive ear = ShrinkWrap.create(EnterpriseArchive.class, deploymentName);
 	    ear.addAsModule(raa);
 	    ear.addAsManifestResource("rar/" + deploymentName + "/META-INF/application.xml", "application.xml");
-		ear.as(ZipExporter.class).exportTo(new java.io.File("/Users/rr/Downloads/_tmp/ear_packaged.zip"));
+	    //ear.as(ZipExporter.class).exportTo(new java.io.File("/Users/rr/Downloads/_tmp/ear_packaged.zip"));
         return ear;
     }
 
